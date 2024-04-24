@@ -1,5 +1,7 @@
 package HW3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
@@ -9,7 +11,8 @@ public class NewStudent implements Externalizable {
 
     private String name;
     private Integer age;
-    private Double gpa;
+    @JsonIgnore
+    transient Double gpa;
 
     public NewStudent() {
     }

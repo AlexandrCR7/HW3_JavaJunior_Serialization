@@ -7,6 +7,7 @@ package HW3;
 import java.io.*;
 import static HW3.NewStudentService.*;
 public class App {
+
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         Student student = new Student("Alexandr", 32, 99.9);
